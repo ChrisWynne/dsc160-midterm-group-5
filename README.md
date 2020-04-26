@@ -4,7 +4,7 @@ DSC160 Data Science and the Arts - Midterm Project Repository - Spring 2020
 
 Project Team Members: 
 - Chris Wynne, cwynne@ucsd.edu
-- Firstname Lastname2, name2@ucsd.edu
+- Andy Do, ando@ucsd.edu
 - Firstname Lastname3, name3@ucsd.edu
 - Firstname Lastname4, name4@ucsd.edu
 - Firstname Lastname5, name5@ucsd.edu
