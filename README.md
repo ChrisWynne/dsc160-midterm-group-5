@@ -6,7 +6,7 @@ Project Team Members:
 - Chris Wynne, cwynne@ucsd.edu
 - Andy Do, ando@ucsd.edu
 - Saieashwar Mukund, samukund@ucsd.edu
-- Firstname Lastname4, name4@ucsd.edu
+- Matthew Widjaja, mwidjaja@ucsd.edu
 - Firstname Lastname5, name5@ucsd.edu
 
 ## Abstract
