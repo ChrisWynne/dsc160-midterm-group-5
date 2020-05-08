@@ -40,9 +40,13 @@ For the project proposal, please write a short abstact addressing the questions 
 
 This section will describe your data and its origins. Each item should contain a name of the data source, a link to the source, and any necessary background information such as:
 - What is your cultural data source? 
+  We are pulling higher level features of songs from Spotify's API for several different genres including rock, K-pop and pop
 - When was it made? 
+  While the songs themselves were uploaded to Spotify at different times, the dataset we have generated is a snapshot of what is available from Spotify as of May 6th.
 - Who created the works? 
+  We included songs from various different artists across different genres however the features in our dataset were created by the Spotify team
 - Is it digital native, or is it some kind of scan, recording, photo, etc., of an analog form? 
+  It is digital
 
 ## Code
 
@@ -90,6 +94,7 @@ Any implementation details or notes we need to repeat your work.
 - Additional libraries you are using for this project
 - Does this code require other pip packages, software, etc?
 - Does this code need to run on some other (non-datahub) platform? (CoLab, etc.)
+  No
 
 ## Reference
 
