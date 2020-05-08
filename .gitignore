@@ -2,4 +2,4 @@ api_cred.json
 data/local
 __pycache__
 .ipynb_checkpoints
-*/.ipynb_checkpoints
+**/*.ipynb_checkpoints/
