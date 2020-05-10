@@ -96,11 +96,11 @@ This is why we decided to do the same UMAP graph, except color the points on the
 
 Results of classifications
 
-![classification_graph1](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/tree/coden-dev/results/images/classification_graph1.png)
+![classification_graph1](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/classification_graph1.png)
 
 This first graph is our classification algorithm trained on a shuffled subset of our data, and tested on a separate shuffled test subset of the data. This shows the overall error rate across all the genres that we tested. The hardest genre to classify looks to be pop music, which has the highest error rate by over 0.4. Following pop was rock, edm, country, and hip-hop with all relatively same error rates. What we didn’t expect was to see K-POP so far down this list, as it seems our classifier was able to identify K-POP songs without much difficulty, as seen by its low error rate. This is contrary to what we thought would be the case, as we initially hypothesized that K-POP songs would have a difficult time being classified because of its wide breadth. 
 
-![classification_graph2](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/coden-dev/results/images/classification_graph2.png)
+![classification_graph2](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/classification_graph2.png)
 
 To test what genres are closest to K-POP, we retrained our classifier on all non K-POP songs. We then tested it on only the K-POP songs. The predominant prediction was that there was no genre that fit the test set of only K-POP songs, which we believe shows that it’s a very unique genre among all the genres we tested. The next most predicted genres are pop, country, and edm, which we still found surprising. We didn’t expect Country to be in the top 3 closest genres to K-POP, yet it came in as the second most predicted genre. Pop and EDM we expected more, but overall this graph shows us that K-POP songs are distinct from other genres by a far margin.
 
