@@ -78,6 +78,7 @@ This section will contain links to documentation of your results. This can inclu
 Plots: acousticness, danceability, umap
 
 ![acousticness_graph](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/acousticness.png)
+
 Acousticness is a prediction whether the song is acoustic or not. This is measured between a value of 0 and 1, where 0 indicates that it has very little confidence that a song is acoustic, and 1 where it has very high confidence that it is acoustic. In the boxplot kpop seems to be special, which means that there are no other genres that share a similar distribution. The boxplot that seem the most similar to kpop are pop and country, but we can see the clear difference in quartiles. However, all three of these genres have no outliers and the second quartile is more shifted towards the first quartile. We can see the similarity between pop and country, since it is on the upper half of our RandomForestClassifier.
 
 ![danceability_graph](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/danceability.png)
