@@ -1,4 +1,4 @@
-# K<sub>pop</sub)-Nearest Neighbors
+# K<sub>pop</sub>-Nearest Neighbors
 
 DSC160 Data Science and the Arts - Midterm Project Repository - Spring 2020
 
