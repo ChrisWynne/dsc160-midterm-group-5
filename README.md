@@ -1,4 +1,4 @@
-# Project Title
+# K<sub>pop</sub)-Nearest Neighbors
 
 DSC160 Data Science and the Arts - Midterm Project Repository - Spring 2020
 
@@ -66,6 +66,7 @@ Link each of your notebooks or .py files within this section, and provide a brie
 This notebook contains code that uses the Spotify API and the Spotipy python library to scrape a dataset of songs from multiple genres, with features being the audio features provided by Spotify. It takes in a category id (which can be thought of as a genre) and scrapes the first 50 playlists for that category, getting the audio features for all songs in each playlist. At the end, it writes the dataset to a csv. Since the scraping requires an API key, we have included our dataset as a csv in the repo under the “data/test/all/metadata/all_audio_features.csv”.
 
 [Classification Analysis Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/coden_eda.ipynb)
+
 This notebook analyzes our scraped song data and looks at the classification accuracies of every genre and K-POP as every other genre. Simply running every cell in the notebook shows two plots looking at individual genre classification error rates as well as a plot showing what genres K-POP songs can be most nearly classified as.
 
 
@@ -168,7 +169,7 @@ Any implementation details or notes we need to repeat your work.
 - Does this code require other pip packages, software, etc?
   - Spotipy, UMAP and pydub are the only other pip packages
 - Does this code need to run on some other (non-datahub) platform? (CoLab, etc.)
-  No
+  - No
 
 ## Reference
 
