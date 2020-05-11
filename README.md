@@ -79,7 +79,7 @@ This section will link to the various code for your project (stored within this 
 
 Link each of your notebooks or .py files within this section, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
 
-[Spotify API Dataset Generation](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/cwynne_scraping.ipynb)
+[Spotify API Dataset Generation](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/final_scraping.ipynb)
 
 This notebook contains code that uses the Spotify API and the Spotipy python library to scrape a dataset of songs from multiple genres, with features being the audio features provided by Spotify. It takes in a category id (which can be thought of as a genre) and scrapes the first 50 playlists for that category, getting the audio features for all songs in each playlist. At the end, it writes the dataset to a csv. Since the scraping requires an API key, we have included our dataset as a csv in the repo under the “data/test/all/metadata/all_audio_features.csv”.
 
@@ -87,6 +87,17 @@ This notebook contains code that uses the Spotify API and the Spotipy python lib
 
 This notebook analyzes our scraped song data and looks at the classification accuracies of every genre and K-POP as every other genre. Simply running every cell in the notebook shows two plots looking at individual genre classification error rates as well as a plot showing what genres K-POP songs can be most nearly classified as.
 
+[Sai's EDA Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/samukund_eda.ipynb)
+
+This notebook analyzes the audio features in the dataset generated from the Spotify API and Spotipy library. The genre(s) column initially is a list of genres that a song is classified as. This column is unnested so each song has unique rows for each genre type it is classified as. To get a better understanding of K-POP songs we have scraped, only that genre of songs is plotted using combinations of features, showing which features are correlated with one another. The audio features are then plotted against one another, however, this time with multiple genres color coded, to see how each genre compares and what features are more telling of certain genres. Finally, to understand features more thoroughly, boxplots for each genre are produced for each audio feature, showing that danceability and acousticness are most telling for a genre type. Dimensional reduction was then conducted on the features that we considered to be the best indicators of genre and UMAP plots are produced, one showing all genre types and the other highlighting where K-POP songs lie and which clusters they are closest to. The plots we found useful can be found in “results/images/”.
+
+[Matt's EDA Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/mat-eda.ipynb)
+
+This notebook creates audio features using Librosa's mfcc function for all songs in the main dataframe that contain a 30 second sample URL. I figured out early on that it created too many features for the models to train on so then we take the total features and labels and shuffle them around then take a sample of the data to use as training data while excluding K-pop songs. Then it trains a RandomForestClassifier and K-Nearest Neighbor model, taking random samples from the K-pop songs in our dataframe and predicting based on their generated features which genre it would be classified as and returning the predictions. We then generate graphs to show the distribution of genre predictions for both models.
+
+[Andy's EDA Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/andydo_eda.ipynb)
+
+Reworked code to create a scatterplot to only display a sample of data. Old code made it very hard to see the different genres because we had too much data so the plots on the scatterplot were being covered. Updated so it would display less plots, making the graph more visible.
 
 ## Results
 
@@ -124,6 +135,11 @@ This first graph is our classification algorithm trained on a shuffled subset of
 
 To test what genres are closest to K-POP, we retrained our classifier on all non K-POP songs. We then tested it on only the K-POP songs. The predominant prediction was that there was no genre that fit the test set of only K-POP songs, which we believe shows that it’s a very unique genre among all the genres we tested. The next most predicted genres are pop, country, and edm, which we still found surprising. We didn’t expect Country to be in the top 3 closest genres to K-POP, yet it came in as the second most predicted genre. Pop and EDM we expected more, but overall this graph shows us that K-POP songs are distinct from other genres by a far margin.
 
+![RandomForestGraph](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/RandomForestClassifier.png)
+
+![KNNGraph](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/KNN.png)
+
+Our graphs show for a sample of K-pop songs what genres our models predict them as. For our Random Forest Classifier, we see that K-pop songs have a strong relation to EDM with pop in second and the rest of the genres not as strong compared to our first two. This seems not too surprising as modern K-pop songs use more electronic instrumentals rather than more traditional instrumentals. Meanwhile for our KNN, we see a similar relation to EDM and now instead of pop music in second we have country music which makes sense from our EDA as we see K-pop and country music sharing similar distributions in certain high level features which may correlate to this similarity in lower level features.
 
 - image files (`.jpg`, `.png` or whatever else is appropriate)
 - audio files (`.wav`, `.mp3`)
