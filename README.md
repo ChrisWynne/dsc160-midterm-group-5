@@ -139,7 +139,7 @@ To test what genres are closest to K-POP, we retrained our classifier on all non
 
 ![KNNGraph](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/results/images/KNN.png)
 
-Our graphs show for a sample of K-pop songs what genres our models predict them as. For our Random Forest Classifier, we see that K-pop songs have a strong relation to EDM Dance with Pop in second and the rest of the genres not as strong compared to our first two. This seems not too surprising as modern K-pop songs use more electronic instrumentals rather than more traditional instrumentals. 
+Our graphs show for a sample of K-pop songs what genres our models predict them as. For our Random Forest Classifier, we see that K-pop songs have a strong relation to EDM with pop in second and the rest of the genres not as strong compared to our first two. This seems not too surprising as modern K-pop songs use more electronic instrumentals rather than more traditional instrumentals. Meanwhile for our KNN, we see a similar relation to EDM and now instead of pop music in second we have country music which makes sense from our EDA as we see K-pop and country music sharing similar distributions in certain high level features which may correlate to this similarity in lower level features.
 
 - image files (`.jpg`, `.png` or whatever else is appropriate)
 - audio files (`.wav`, `.mp3`)
