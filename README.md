@@ -135,6 +135,8 @@ To test what genres are closest to K-POP, we retrained our classifier on all non
 
 The first paragraph should be a short summary describing your results.
 
+Our null hypothesis is that K-pop music is different enough from other genres to be considered as its own genre while our alternate hypothesis is that K-pop music is similar enough to other genres of music that it can be classified under other popular genres. We were unable to reject the null hypothesis as when we classified K-pop songs with our trained models, they resulted in low error rates indicating that K-pop is unique enough of a genre that it can be distinguished from other popular genres.
+
 The subsequent paragraphs could address questions including:
 - Why is this culturally relevant?
 - How does your computational approach differ from the traditional art historical, musicological, manuel/subjective approach to analyzing your cultural subject? 
