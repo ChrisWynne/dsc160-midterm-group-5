@@ -20,7 +20,9 @@ For the project proposal, please write a short abstact addressing the questions 
 - What is your research question? 
   - Our research question is looking into the definition of K-POP music. We believe that the genre of K-POP music is too broad to be considered only pop music, and will have a variety of ties to other genres of music. 
 - What is your hypothesis about the results? 
-  - Our hypothesis is that K-POP music will correlate to other popular genres. We think this is because there’s a wide breadth of K-POP genres classified under the generic K-POP genre. 
+  - Our null hypothesis is that K-pop music is different enough from other genres to be considered as its own genre
+  - Our alternate hypothesis is that K-pop music is similar enough to other genres of music that it can be classified under other popular genres
+
 - What features of the data will you use to address your question? 
   - Spotify provides simple features from audio tracks, such as tempo, time signature, duration, and key, as well as its own calculated, higher level features, such as danceability, energy, instrumentalness, and valence.
 - What techniques and software tools will you use to extract these features?
