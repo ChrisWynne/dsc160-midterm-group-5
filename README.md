@@ -15,26 +15,9 @@ Project Team Members:
 
 For the project proposal, please write a short abstact addressing the questions below. You should replace the entire contents of this section with one to two paragraphs addressing the following:
 
-- What is the data set that you are going to analyze?
-  - We are analyzing the spotify created K-POP playlists along with other popular spotify created playlists of differing genres. 
-- What is your research question? 
-  - Our research question is looking into the definition of K-POP music. We believe that the genre of K-POP music is too broad to be considered only pop music, and will have a variety of ties to other genres of music. 
-- What is your hypothesis about the results? 
-  - Our null hypothesis is that K-pop music is different enough from other genres to be considered as its own genre
-  - Our alternate hypothesis is that K-pop music is similar enough to other genres of music that it can be classified under other popular genres
+We are analyzing the spotify created K-POP playlists along with other popular spotify created playlists of differing genres. Our research question is looking into the definition of K-POP music. We believe that the genre of K-POP music is too broad to be considered only pop music, and will have a variety of ties to other genres of music. Our null hypothesis is that K-pop music is different enough from other genres to be considered as its own genre an our alternate hypothesis is that K-pop music is similar enough to other genres of music that it can be classified under other popular genres. Spotify provides simple features from audio tracks, such as tempo, time signature, duration, and key, as well as its own calculated, higher level features, such as danceability, energy, instrumentalness, and valence. 
 
-- What features of the data will you use to address your question? 
-  - Spotify provides simple features from audio tracks, such as tempo, time signature, duration, and key, as well as its own calculated, higher level features, such as danceability, energy, instrumentalness, and valence.
-- What techniques and software tools will you use to extract these features?
-  - We will be using the Spotify API to pull higher level audio features for our selected songs. Then using pandas we’ll look at combinations of various features to see how they all come together to predict the genre of a given song.
-- What analytic techniques will you use?
-  - We’ll do a higher level feature analysis on the features given to us by Spotify’s api. Based on these features, we will test out different classifiers to see if we can accurately distinguish between K-POP music and music of other genres to help us learn how K-POP compares to these other genres.
-- What forms will your results take? (graphs, charts, images, sonification, Wordles, etc)
-  - Our results will be in the form of graphs mostly comparing audio features from one genre to another. We will also attempt a classifier to group certain tracks by their metadata features, and use those to create meta-genres.
-- How are you expanding on topics we have covered in class? 
-  - We’re expanding on topics covered in class by combining higher level features to analyze the difference between genres as well as songs within those genres.
-- Why is it interesting? (personally, culturally, politically, other)
-  - We think this is really cool and culturally interesting because we hear about K-POP songs all the time but also believe that there is a large breadth of genres within the genre. We think that this is due to cultural differences between the USA and Korea which are reflected in their definition of popular music.
+We will be using the Spotify API to pull higher level audio features for our selected songs. Then using pandas we’ll look at combinations of various features to see how they all come together to predict the genre of a given song. We’ll do a higher level feature analysis on the features given to us by Spotify’s api. Based on these features, we will test out different classifiers to see if we can accurately distinguish between K-POP music and music of other genres to help us learn how K-POP compares to these other genres. Our results will be in the form of graphs mostly comparing audio features from one genre to another. We will also attempt a classifier to group certain tracks by their metadata features, and use those to create meta-genres. We’re expanding on topics covered in class by combining higher level features to analyze the difference between genres as well as songs within those genres. We think this is really cool and culturally interesting because we hear about K-POP songs all the time but also believe that there is a large breadth of genres within the genre. We think that this is due to cultural differences between the USA and Korea which are reflected in their definition of popular music.
 
 ## Data
 
