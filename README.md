@@ -95,7 +95,7 @@ This notebook analyzes the audio features in the dataset generated from the Spot
 
 This notebook creates audio features using Librosa's mfcc function for all songs in the main dataframe that contain a 30 second sample URL. I figured out early on that it created too many features for the models to train on so then we take the total features and labels and shuffle them around then take a sample of the data to use as training data while excluding K-pop songs. Then it trains a RandomForestClassifier and K-Nearest Neighbor model, taking random samples from the K-pop songs in our dataframe and predicting based on their generated features which genre it would be classified as and returning the predictions. We then generate graphs to show the distribution of genre predictions for both models.
 
-[Andy's EDA Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/andydo_eda.ipynb.ipynb)
+[Andy's EDA Notebook](https://github.com/ucsd-dsc-arts/dsc160-midterm-group-5/blob/master/code/andydo_eda.ipynb)
 
 Reworked code to create a scatterplot to only display a sample of data. Old code made it very hard to see the different genres because we had too much data so the plots on the scatterplot were being covered. Updated so it would display less plots, making the graph more visible.
 
